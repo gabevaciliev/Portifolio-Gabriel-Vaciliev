@@ -11,6 +11,8 @@ header {
     width: 100%;
     background-color: #1F4E79;
     padding: 15px 0;
+
+    box-shadow: 0 0 5px rgba(33, 125, 211, 0.7);
 }
 
 .navbar ul {
@@ -29,8 +31,6 @@ header {
     border-radius: 8px;
     padding: 5px 15px;
     background-color: #686869;
-
-    box-shadow: 0 0 5px rgba(33, 125, 211, 0.7);
 }
 
 .navbar a:hover {
