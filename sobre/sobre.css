@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1F4E79;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #686869;
+    border-radius: 8px;
+    padding: 5px 15px;
+    background-color: #686869;
+
+    box-shadow: 0 0 5px rgba(33, 125, 211, 0.7);
+}
+
+.navbar a:hover {
+    color: #ffd900;
+    background-color: #026ad8;
+    border-color: #0051a2;
+}
+
+.foto {
+    display: block;
+    margin: 100px auto 0;
+    /* Ajuste a margem superior para evitar sobreposição com o header */
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    object-fit: cover;
+
+    box-shadow:
+        0 0 10px rgba(100, 180, 255, 0.8),
+        0 0 20px rgba(100, 180, 255, 0.6),
+        0 0 40px rgba(100, 180, 255, 0.4);
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Importação da fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #fdf1f1;
+}
+
+.sobre-mim {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.sobre-mim h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fdf1f1;
+}
+
+.sobre-mim p {
+    font-size: 20px;
+    line-height: 1.0;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 100%;
+    /* Ajuste a opacidade conforme necessário */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F4E79;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
