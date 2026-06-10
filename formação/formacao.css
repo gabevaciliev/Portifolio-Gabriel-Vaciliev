@@ -22,7 +22,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
 }
 
 .navbar ul {
@@ -31,6 +30,7 @@ header {
     justify-content: center;
     gap: 30px;
 }
+
 
 .navbar a {
     text-decoration: none;
@@ -43,6 +43,7 @@ header {
 
     transition: all 0.3s ease;
 }
+
 
 .navbar a:hover {
     background-color: #026ad8;
@@ -59,22 +60,43 @@ main {
     padding-top: 100px;
 }
 
-/* CONTEÚDO */
+/* CENTRALIZA CONTEÚDO */
 .conteudo-formacao {
     max-width: 900px;
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 120px 20px 40px; /* importante por causa do header fixo */
 }
 
+/* CARD MELHORADO */
 .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* efeito hover mais moderno */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* H2 MAIS PROFISSIONAL */
 .card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
     color: #1F4E79;
-    margin-bottom: 10px;
+    border-left: 5px solid #026ad8;
+    padding-left: 10px;
+}
+
+/* TEXTO DO CARD */
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
