@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F4F7FB;
+    color: #2B2B2B;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1F4E79;
+    padding: 15px 0;
+    box-shadow: 0 0 5px rgba(33, 125, 211, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+   list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 5px 15px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #026ad8;
+    color: #ffd900;
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px rgba(100, 180, 255, 0.8),
+        0 0 20px rgba(100, 180, 255, 0.5);
+}
+
+.linkedinLogo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.linkedinLogo:hover {
+    transform: translateY(-50%) scale(1.15);
+
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.8))
+            drop-shadow(0 0 10px rgba(100,180,255,0.7));
+}
