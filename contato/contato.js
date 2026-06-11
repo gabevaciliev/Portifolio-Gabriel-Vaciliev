@@ -17,11 +17,7 @@ form.addEventListener("submit", function (event) {
     const assunto = "Contato pelo Portfólio";
 
     const corpo =
-`E-mail do remetente: ${email}
-
-${mensagem}
-
-Atenciosamente,`;
+        `${mensagem}`;
 
     window.location.href =
         `mailto:gabrielvaciliev66@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
